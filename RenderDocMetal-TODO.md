@@ -144,6 +144,8 @@ MTLRenderCommandEncoder::endEncoding();
 
 ## Notes
 
+- Tweet of offer of help from Ogre Engine : https://twitter.com/matiasgoldberg/status/1453450670988828687?s=21
+
 ## Metal CommandBuffers
 - The command buffer can only be committed for execution on the command queue that created it. All command buffers sent to a single command queue are guaranteed to execute in the order in which the command buffers were enqueued.
 - At any given time, only a single encoder may be active for a particular command buffer. You create an encoder, use it to add commands to the buffer, and then end the encoding process. After you finish with an encoder, you can create another encoder and continue to add commands to the same buffer. When you are ready to execute the set of encoded commands, call the command buffer’s commit method to schedule the buffer for execution.
